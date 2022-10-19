@@ -1,19 +1,19 @@
-import React from 'react';
-import Merch from './Merch';
+import React, { useState } from 'react';
+import Merch from './Merch.js';
+import { merchandiseData } from '../merchandiseData';
+import Menu from './Menu';
 
 const Shop = (props) => {
-
-    const { storeItems } = props;
+    // this is a use case for context. your cart follows you regardless of page
+    const [ storeItems, setStoreItems ] = useState(merchandiseData);
     
     return (
         <div className='Shop'>
-            <div> TITLE </div>
+            <Menu />
             <div>
                 <div> Model Photo</div>
                 <div>
-                    {storeItems.map(item => {
-                        return (<Merch/>);
-                    })}
+                    {storeItems.map((item) => <Merch />)}
                 </div>
             </div>
         </div>
