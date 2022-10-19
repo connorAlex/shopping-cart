@@ -7,12 +7,16 @@ function App() {
 
   return (
     <div className="App">
-      Home
       <div>
         <Menu />
         <CartIcon />
       </div>
-      
+      <div className='imgGrandParent'>
+        <div className='imgParent'>
+          <div className='img'>img</div>
+        </div>
+        
+      </div>
     </div>
   );
 }
