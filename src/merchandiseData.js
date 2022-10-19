@@ -21,4 +21,4 @@ const merchandiseData = [
     }
 ];
 
-export {merchData};
+export {merchandiseData};
