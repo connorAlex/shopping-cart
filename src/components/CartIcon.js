@@ -1,10 +1,12 @@
 import React from "react";
 
-const CartIcon = () => {
+const CartIcon = (props) => {
+    const { cartCount } = props;
 
     return (
-        <div>
-
+        <div className="CartIcon">
+            <div> CART </div>
+            <div>{cartCount}</div>
         </div>
     );
 }
