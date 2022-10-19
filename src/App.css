@@ -1,4 +1,35 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+  ;
 }
-
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5px;
+  width: 100%;
+}
+.Menu {
+  font-weight: 500;
+  align-self: flex-start;
+}
+.imgGrandParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  height: 70vh;
+  width: 70vw;
+}
+.imgParent{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  height: 70%;
+  width: 70%;
+}
