@@ -13,7 +13,7 @@ const Merch = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default Merch;

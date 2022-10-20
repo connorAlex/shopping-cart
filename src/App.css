@@ -1,15 +1,17 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center
-  ;
+  align-items: center;
+  gap: 15px;
+  height: 100vh;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  padding-inline: 5px;
   width: 100%;
+}
+.header div {
+  padding-inline: 5px;
 }
 .Menu {
   font-weight: 500;
@@ -21,7 +23,7 @@
   justify-content: center;
   align-items: center;
   background-color: lightblue;
-  height: 70vh;
+  height: 75%;
   width: 70vw;
 }
 .imgParent{

@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className='header'>
         <Menu />
         <CartIcon />
       </div>
@@ -15,7 +15,6 @@ function App() {
         <div className='imgParent'>
           <div className='img'>img</div>
         </div>
-        
       </div>
     </div>
   );
