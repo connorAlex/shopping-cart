@@ -3,7 +3,7 @@ import React from "react";
 const Merch = () => {
 
     return (
-        <div>
+        <div className="Merch">
             <div> img </div>
             <div>
                 <div> Label 1 Large</div>

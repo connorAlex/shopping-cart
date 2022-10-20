@@ -39,3 +39,32 @@
   height: 70%;
   width: 70%;
 }
+
+.Shop {
+  display:flex;
+  flex-direction: column;
+}
+.Shop > :nth-child(2) {
+  background-color: antiquewhite;
+
+  display: flex;
+  align-self: center;
+  width: 95%;
+}
+.merchContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Merch {
+  background-color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
