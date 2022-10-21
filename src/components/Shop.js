@@ -3,7 +3,6 @@ import Merch from './Merch.js';
 import { merchandiseData } from '../merchandiseData';
 import Menu from './Menu';
 import CartIcon from './CartIcon';
-
 const Shop = (props) => {
     // this is a use case for context. your cart follows you regardless of page
     const [ storeItems, setStoreItems ] = useState(merchandiseData);
@@ -15,7 +14,7 @@ const Shop = (props) => {
                 <CartIcon />
             </div>
             <div>
-                <div> Model Photo</div>
+                <div> img </div>
                 <div className='merchContainer'>
                     {storeItems.map((item) => <Merch />)}
                 </div>

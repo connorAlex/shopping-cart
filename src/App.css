@@ -37,6 +37,7 @@
   justify-content: center;
   background-color: aliceblue;
   height: 70%;
+  min-width: fit-content;
   width: 70%;
 }
 
@@ -50,6 +51,10 @@
   display: flex;
   align-self: center;
   width: 95%;
+}
+.model {
+  height: 250px;
+  width: 250px;
 }
 .merchContainer {
   width: 100%;
