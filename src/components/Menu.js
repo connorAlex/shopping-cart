@@ -12,7 +12,7 @@ const Menu = () => {
     return (
         <div className="Menu">
             <div onClick={() => routeChange('/')}> FUITE À VARENNES </div>
-            <div onClick={() => routeChange('shop')}> SHOP </div>
+            <div onClick={() => routeChange('/shop')}> SHOP </div>
             <div> ABOUT </div>
             <div> SEARCH </div>
         </div>
