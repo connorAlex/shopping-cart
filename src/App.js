@@ -5,13 +5,15 @@ import CartIcon from './components/CartIcon';
 import model from './images/model.jpg'
 
 
-function App() {
+function App(props) {
+
+  const {cartCount} = props;
 
   return (
     <div className="App">
       <div className='header'>
         <Menu />
-        <CartIcon />
+        <CartIcon cartCount={cartCount}/>
       </div>
       <div className='imgGrandParent'>
         <div className='imgParent'>

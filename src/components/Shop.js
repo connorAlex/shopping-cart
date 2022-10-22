@@ -6,12 +6,12 @@ import CartIcon from './CartIcon';
 const Shop = (props) => {
     // this is a use case for context. your cart follows you regardless of page
     const [ storeItems, setStoreItems ] = useState(merchandiseData);
-    
+    const { cartCount } = props;
     return (
         <div className='Shop'>
            <div className='header'>
                 <Menu />
-                <CartIcon />
+                <CartIcon cartCount={cartCount}/>
             </div>
             <div>
                 <div> img </div>

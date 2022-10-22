@@ -4,15 +4,15 @@ import Menu from './Menu';
 import Pricing from './Pricing';
 
 const Checkout = () => {
-
+    
+    //this should be created from props
     const [items, setItems] = useState([0,2,3]);
 
     return (
         <div>
             <Menu />
-            Checkout
             <div>
-                <div class='cartContainer'>
+                <div className='cartContainer'>
                     {items.map((item) => 
                         <CartItem />
                     )}
