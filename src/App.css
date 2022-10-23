@@ -33,6 +33,10 @@
   cursor: pointer;
   width: fit-content;
 }
+.Menu :first-child {
+  font-size: 25px;
+  font-weight: 700;
+}
 .imgGrandParent {
   display: flex;
   flex-direction: column;
@@ -65,34 +69,60 @@
   height: 100vh;
 }
 .Shop > :nth-child(2) {
-  background-color: antiquewhite;
   display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: center;
+
   height: 80vh;
-  width: 95%;
+  width: 100%;
 }
 .model {
   height: 500px;
   width: auto;
 }
+.sideImg { 
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+}
 .merchContainer {
-  width: 100%;
   display: flex;
-  gap: 15px;
   flex-wrap: wrap;
+  overflow: scroll;
+
+  align-items: center;
+  justify-content: center;
+  
+  gap: 15px;
+  width: 60%;
+  height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.merchContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.merchContainer {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .Merch {
-  background-color: aliceblue;
+  background-color: var(--light-gray);
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 35px;
-  height: 300px;
-  width: 300px;
+
+  margin: 10px;
+  min-height: 250px;
+  min-width: 250px;
 }
 .CartIcon {
   cursor: pointer;
+  font-weight: 600;
 }
