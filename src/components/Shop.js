@@ -19,7 +19,7 @@ const Shop = (props) => {
             <div>
                 <img src={sidePhoto} className='sideImg' />
                 <div className='merchContainer'>
-                    {storeItems.map((item) => <Merch />)}
+                    {storeItems.map((item) => <Merch img={item.img} title={item.title} label={item.label} price={item.price}/>)}
                 </div>
             </div>
         </div>
