@@ -1,6 +1,8 @@
+import coat from './images/trench_closeup.jpeg';
+
 const merchandiseData = [
     {
-        img: '',
+        img: coat,
         title: 'Coat',
         label: 'Double Sided Wool',
         price: '1,200'

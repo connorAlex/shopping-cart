@@ -6,7 +6,7 @@ const Merch = (props) => {
 
     return (
         <div className="Merch">
-            <div> img </div>
+            <img src={img} />
             <div>
                 <div> {title}</div>
                 <div>
