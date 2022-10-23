@@ -6,12 +6,12 @@ const Merch = (props) => {
 
     return (
         <div className="Merch">
-            <img src={img} />
+            <img className='merchImg' src={img} alt={label}/>
             <div>
                 <div> {title}</div>
                 <div>
                     <div> {label} </div>
-                    <div> {price} </div>
+                    <div> ${price} </div>
                 </div>
             </div>
         </div>

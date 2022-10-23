@@ -80,11 +80,13 @@
 .model {
   height: 500px;
   width: auto;
+  
 }
 .sideImg { 
   height: 100%;
   width: 40%;
   object-fit: cover;
+  padding: 10px;
 }
 .merchContainer {
   display: flex;
@@ -110,8 +112,6 @@
   scrollbar-width: none;  /* Firefox */
 }
 .Merch {
-  background-color: var(--light-gray);
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -119,10 +119,23 @@
   align-items: center;
 
   margin: 10px;
-  min-height: 250px;
-  min-width: 250px;
+  min-height: 350px;
+  min-width: 350px;
+
+  box-shadow: 0px 0px 5px 1px var(--light-gray);
+}
+
+.merchImg {
+  height: auto;
+  max-width: 350px;
+  
+}
+.Merch > div {
+  align-self:flex-start;
+  padding: 5px;
 }
 .CartIcon {
   cursor: pointer;
   font-weight: 600;
 }
+
