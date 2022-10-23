@@ -1,23 +1,27 @@
 const merchandiseData = [
     {
         img: '',
-        title: '',
-        label: ''
+        title: 'Coat',
+        label: 'Double Sided Wool',
+        price: '1,200'
     },
     {
         img: '',
-        title: '',
-        label: ''
+        title: 'Sunglasses',
+        label: 'Black Oval',
+        price: '120',
     },
     {
         img: '',
-        title: '',
-        label: ''
+        title: 'Combat Boot',
+        label: 'Black Smooth Calfskin',
+        price: '240',
     },
     {
         img: '',
-        title: '',
-        label: ''
+        title: 'Slim-Fit Jeans',
+        label: 'Black Denim',
+        price: '400',
     }
 ];
 
