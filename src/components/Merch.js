@@ -1,15 +1,17 @@
 import React from "react";
 
-const Merch = () => {
+const Merch = (props) => {
+
+    const {img, title, label, price} = props;
 
     return (
         <div className="Merch">
             <div> img </div>
             <div>
-                <div> Label 1 Large</div>
+                <div> {title}</div>
                 <div>
-                    <div> Label 2 small</div>
-                    <div> Price </div>
+                    <div> {label} </div>
+                    <div> {price} </div>
                 </div>
             </div>
         </div>
