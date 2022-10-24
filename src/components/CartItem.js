@@ -1,13 +1,15 @@
 import React from 'react';
 
-const CartItem = () => {
+const CartItem = (props) => {
+
+    const {item} = props;
 
     return (
         <div className='CartItem'>
-            <div>img</div>
+            <div>{item.img}</div>
             <div>
-                <div>Label</div>
-                <div>Price</div>
+                <div>{item.label}</div>
+                <div>{item.price}</div>
             </div>
             
         </div>

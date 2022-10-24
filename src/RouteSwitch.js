@@ -9,14 +9,14 @@ const RouteSwitch = () => {
     const [cart, setCart] = useState([]);
     
     const addToCart = (item) => {
-        setCart(cart.concat(...cart,item))
+        setCart(cart.concat(item))
     }
 
     return (
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<App cartCount={cart.length}/>} />
-                <Route path='/checkout' element={<Checkout />} />
+                <Route path='/checkout' element={<Checkout items={cart}/>} />
                 <Route path='/shop' element={<Shop addToCart={addToCart} cartCount={cart.length}/>}/>
             </Routes>
         </BrowserRouter>

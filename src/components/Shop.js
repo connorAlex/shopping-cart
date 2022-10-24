@@ -17,13 +17,10 @@ const Shop = (props) => {
                 <CartIcon cartCount={cartCount}/>
             </div>
             <div>
-                <img src={sidePhoto} className='sideImg' />
+                <img src={sidePhoto} className='sideImg' alt='Model wearing clothing that is for sale'/>
                 <div className='merchContainer'>
                     {storeItems.map((item) => <Merch 
-                        img={item.img} 
-                        title={item.title} 
-                        label={item.label} 
-                        price={item.price}
+                        item={item}
                         key={uniqid()}
                         addToCart={addToCart}
                         />

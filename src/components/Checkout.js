@@ -2,11 +2,12 @@ import React, {useState} from 'react';
 import CartItem from './CartItem';
 import Menu from './Menu';
 import Pricing from './Pricing';
+import uniqid from 'uniqid';
 
-const Checkout = () => {
+const Checkout = (props) => {
     
     //this should be created from props
-    const [items, setItems] = useState([0,2,3]);
+    const {items} = props;
 
     return (
         <div>
@@ -14,7 +15,10 @@ const Checkout = () => {
             <div>
                 <div className='cartContainer'>
                     {items.map((item) => 
-                        <CartItem />
+                        <CartItem 
+                            item={item}
+                            key={uniqid()}
+                        />
                     )}
                 </div>
                 <Pricing />
