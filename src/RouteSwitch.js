@@ -4,9 +4,41 @@ import Checkout from './components/Checkout';
 import Shop from './components/Shop';
 import {useState} from 'react';
 
+import shades from './images/shades_closeup.jpeg'
+import coat from './images/trench_closeup.jpeg'
+
 const RouteSwitch = () => {
 
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState([{
+        img: shades,
+        title: 'Sunglasses',
+        label: 'Black Oval',
+        price: '120',
+    },
+    {
+        img: coat,
+        title: 'Coat',
+        label: 'Double Sided Wool',
+        price: '1,200'
+    },
+    {
+        img: shades,
+        title: 'Sunglasses',
+        label: 'Black Oval',
+        price: '120',
+    },
+    {
+        img: shades,
+        title: 'Sunglasses',
+        label: 'Black Oval',
+        price: '120',
+    },
+    {
+        img: shades,
+        title: 'Sunglasses',
+        label: 'Black Oval',
+        price: '120',
+    },]);
     
     const addToCart = (item) => {
         setCart(cart.concat(item))

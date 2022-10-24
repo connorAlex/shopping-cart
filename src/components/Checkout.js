@@ -25,16 +25,22 @@ const Checkout = (props) => {
     const tax = calculateTax(subtotal);
 
     return (
-        <div>
-            <Menu />
-            <div>
-                <div className='cartContainer'>
-                    {items.map((item) => 
-                        <CartItem 
-                            item={item}
-                            key={uniqid()}
-                        />
-                    )}
+        <div className='checkout'>
+            <div className='header'>
+                <Menu />
+            </div>
+            <div className='checkoutContent'>
+                <div>
+                    <div className='cartTitle'>Your Cart</div>
+                        <div className='cartContainer'>
+                    
+                            {items.map((item) =>
+                                <CartItem
+                                    item={item}
+                                    key={uniqid()}
+                                />
+                            )}
+                        </div>
                 </div>
                 <Pricing 
                 subtotal={subtotal}
