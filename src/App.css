@@ -60,7 +60,7 @@ button:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #525051ff;
+  background-color: var(--light-gray);
   height: 80vh;
   min-height: 700px;
   width: 70vw;
@@ -94,12 +94,14 @@ button:hover{
   gap: 5vw;
 
   height: 80vh;
-  width: 100%;
+  width: 90%;
+
 }
 .model {
   height: 500px;
   width: auto;
-  box-shadow: 0px 0px 2px 1px var(--light-gray);
+  box-shadow: 0px 0px 5px 1px var(--light-gray);
+  
 }
 .sideImg { 
   height: 100%;
@@ -217,7 +219,7 @@ button:hover{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 100px;
+  width: 150px;
   min-height: 150px;
   justify-content: space-between;
 }
@@ -242,7 +244,22 @@ button:hover{
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+
+  gap: 15px;
+}
+.Pricing > div> div:first-child {
+  font-weight: 600;
+  border-bottom: none;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+.Pricing > div >div:nth-child(4) {
+  margin-bottom: 15px;
+  
+}
+.Pricing > div > :last-child :first-child {
+  font-weight: 550;
 }
 .Pricing > div > div {
   display: flex;
@@ -250,5 +267,5 @@ button:hover{
   border-bottom: 1px solid black;
 }
 .Pricing > :nth-child(2) {
-  height: 40%;
+  height: 20%;
 }

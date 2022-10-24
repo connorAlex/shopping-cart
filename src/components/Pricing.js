@@ -6,7 +6,9 @@ const Pricing = (props) => {
 
     return (
         <div className="Pricing">
+            
             <div>
+            <div>Amount Due</div>
                 <div>
                     <div> Subtotal </div>
                     <div> ${subtotal}</div>
