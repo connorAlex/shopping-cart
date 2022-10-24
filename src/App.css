@@ -144,6 +144,10 @@
   cursor: pointer;
   font-weight: 600;
 }
+.checkoutImg {
+  height: 150px;
+  width: auto;
+}
 button{
   background-color: var(--light-gray);
   align-self: center;

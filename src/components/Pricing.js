@@ -2,24 +2,26 @@ import React from "react";
 
 const Pricing = (props) => {
 
+    const {subtotal, tax, total} = props;
+
     return (
         <div className="Pricing">
             <div>
                 <div>
                     <div> Subtotal </div>
-                    <div> $XXXX </div>
+                    <div> ${subtotal}</div>
                 </div>
                 <div> 
                     <div> Shipping </div>
-                    <div> $XXX </div>
+                    <div> $13.60 </div>
                 </div>
                 <div>
                     <div> Taxes </div>
-                    <div> $XX </div>
+                    <div> ${tax} </div>
                 </div>
                 <div>
                     <div> Total </div>
-                    <div> $XXXXX </div>
+                    <div> ${total + 13.60} </div>
                 </div>
             </div>
             <div>

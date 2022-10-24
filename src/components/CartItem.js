@@ -9,7 +9,7 @@ const CartItem = (props) => {
             <img className='checkoutImg'src={item.img} alt={item.img}/>
             <div>
                 <div>{item.label}</div>
-                <div>{item.price}</div>
+                <div>${item.price}</div>
             </div>
             
         </div>

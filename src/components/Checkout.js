@@ -6,8 +6,23 @@ import uniqid from 'uniqid';
 
 const Checkout = (props) => {
     
-    //this should be created from props
     const {items} = props;
+
+    const calculateSubTotal = (arr) => {
+        let subtotal = 0;
+        arr.forEach((item) => {
+            subtotal += parseInt(item.price.replace(/,/g,''));
+        });
+        return subtotal;
+    }
+
+    const calculateTax = (subtotal) => {
+        const taxRate = 0.0625;
+        return subtotal * taxRate;
+    };
+
+    const subtotal = calculateSubTotal(items);
+    const tax = calculateTax(subtotal);
 
     return (
         <div>
@@ -21,7 +36,11 @@ const Checkout = (props) => {
                         />
                     )}
                 </div>
-                <Pricing />
+                <Pricing 
+                subtotal={subtotal}
+                tax={tax}
+                total={subtotal+tax}
+                />
             </div>
 
         </div>
