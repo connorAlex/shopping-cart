@@ -6,16 +6,16 @@ import necklace from './images/necklace_closeup.jpg';
 
 const merchandiseData = [
     {
-        img: coat,
-        title: 'Coat',
-        label: 'Double Sided Wool',
-        price: '1,200'
-    },
-    {
         img: shades,
         title: 'Sunglasses',
         label: 'Black Oval',
         price: '120',
+    },
+    {
+        img: coat,
+        title: 'Coat',
+        label: 'Double Sided Wool',
+        price: '1,200'
     },
     {
         img: boot,

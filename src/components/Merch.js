@@ -8,11 +8,12 @@ const Merch = (props) => {
         <div className="Merch">
             <img className='merchImg' src={img} alt={label}/>
             <div>
-                <div> {title}</div>
                 <div>
+                    <div> {title}</div>
                     <div> {label} </div>
                     <div> ${price} </div>
                 </div>
+                <button>Add to Cart</button>
             </div>
         </div>
     );

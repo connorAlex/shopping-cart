@@ -73,6 +73,7 @@
   align-items: center;
   justify-content: center;
   align-self: center;
+  gap: 5vw;
 
   height: 80vh;
   width: 100%;
@@ -80,23 +81,26 @@
 .model {
   height: 500px;
   width: auto;
-  
+  box-shadow: 0px 0px 2px 1px var(--light-gray);
 }
 .sideImg { 
   height: 100%;
-  width: 40%;
+  width: 35%;
+  max-width: 600px;
   object-fit: cover;
-  padding: 10px;
+  box-shadow: 0px 0px 5px 1px var(--light-gray);
+
 }
 .merchContainer {
   display: flex;
   flex-wrap: wrap;
   overflow: scroll;
 
-  align-items: center;
   justify-content: center;
-  
+  align-content: center;
   gap: 15px;
+  
+  max-width: 900px;
   width: 60%;
   height: 100%;
 }
@@ -117,25 +121,43 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
-  margin: 10px;
-  min-height: 350px;
-  min-width: 350px;
+  height: fit-content;
 
   box-shadow: 0px 0px 5px 1px var(--light-gray);
 }
 
 .merchImg {
   height: auto;
-  max-width: 350px;
+  max-width: 325px;
   
 }
 .Merch > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.Merch > div > div {
   align-self:flex-start;
   padding: 5px;
 }
 .CartIcon {
   cursor: pointer;
   font-weight: 600;
+}
+button{
+  background-color: var(--light-gray);
+  align-self: center;
+  border: 0px solid;
+  transition: .4s;
+  padding: 15px;
+  
+  cursor: pointer;
+  margin-inline: 10px;
+}
+
+button:hover{
+  background-color: black;
+  
+  color: whitesmoke;
 }
 
