@@ -6,7 +6,7 @@ const CartItem = (props) => {
 
     return (
         <div className='CartItem'>
-            <div>{item.img}</div>
+            <img className='checkoutImg'src={item.img} alt={item.img}/>
             <div>
                 <div>{item.label}</div>
                 <div>{item.price}</div>
