@@ -6,7 +6,7 @@ import {useState} from 'react';
 
 const RouteSwitch = () => {
 
-    const [cart, setCart] = useState([0]);
+    const [cart, setCart] = useState([]);
     
     const addToCart = (item) => {
         setCart(cart.concat(...cart,item))

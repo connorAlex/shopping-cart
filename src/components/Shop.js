@@ -9,7 +9,7 @@ import uniqid from 'uniqid';
 const Shop = (props) => {
     // this is a use case for context. your cart follows you regardless of page
     const [ storeItems, setStoreItems ] = useState(merchandiseData);
-    const { cartCount } = props;
+    const { cartCount, addToCart } = props;
     return (
         <div className='Shop'>
            <div className='header'>
@@ -25,6 +25,7 @@ const Shop = (props) => {
                         label={item.label} 
                         price={item.price}
                         key={uniqid()}
+                        addToCart={addToCart}
                         />
                     )}
                 </div>

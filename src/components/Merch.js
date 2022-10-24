@@ -2,7 +2,7 @@ import React from "react";
 
 const Merch = (props) => {
 
-    const {img, title, label, price} = props;
+    const {img, title, label, price, addToCart} = props;
 
     return (
         <div className="Merch">
@@ -13,7 +13,7 @@ const Merch = (props) => {
                     <div> {label} </div>
                     <div> ${price} </div>
                 </div>
-                <button>Add to Cart</button>
+                <button onClick={() => addToCart(title)}>Add to Cart</button>
             </div>
         </div>
     );
