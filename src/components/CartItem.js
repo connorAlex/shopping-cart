@@ -2,7 +2,8 @@ import React from 'react';
 
 const CartItem = (props) => {
 
-    const {item} = props;
+    const {item, count} = props;
+    
 
     return (
         <div className='cartItem'>
@@ -12,6 +13,7 @@ const CartItem = (props) => {
                 <div>
                     <div>{item.title}</div>
                     <div>{item.label}</div>
+                    <div>x{count}</div>
                 </div>
                 <div>${item.price}</div>
             </div>

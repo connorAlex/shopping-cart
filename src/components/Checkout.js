@@ -8,6 +8,21 @@ const Checkout = (props) => {
     
     const {items} = props;
 
+    const getCount = (title) => {
+        let count = 0;
+
+        items.forEach((item) => {
+            if (item.title === title) count += 1;
+        });
+
+        return count;
+    }
+
+    const unique = (array, propertyName) => {
+        return array.filter((e, i) => array.findIndex(a => a[propertyName] === e[propertyName]) === i);
+    }
+    
+
     const calculateSubTotal = (arr) => {
         let subtotal = 0;
         arr.forEach((item) => {
@@ -23,6 +38,7 @@ const Checkout = (props) => {
 
     const subtotal = calculateSubTotal(items);
     const tax = calculateTax(subtotal);
+    const distinctItems = unique(items, 'title');
 
     return (
         <div className='checkout'>
@@ -34,8 +50,9 @@ const Checkout = (props) => {
                     <div className='cartTitle'>Your Cart</div>
                         <div className='cartContainer'>
                     
-                            {items.map((item) =>
+                            {distinctItems.map((item) =>
                                 <CartItem
+                                    count={getCount(item.title)}
                                     item={item}
                                     key={uniqid()}
                                 />
