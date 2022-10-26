@@ -13,7 +13,10 @@ const Merch = (props) => {
                     <div> {item.label} </div>
                     <div> ${item.price} </div>
                 </div>
-                <button onClick={() => addToCart(item)}>Add to Cart</button>
+                <button onClick={(e) => {
+                    e.preventDefault();
+                    addToCart(item);
+                }}>Add to Cart</button>
             </div>
         </div>
     );
