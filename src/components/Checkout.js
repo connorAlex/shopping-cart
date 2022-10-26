@@ -12,9 +12,10 @@ const Checkout = (props) => {
         let count = 0;
 
         items.forEach((item) => {
-            if (item.title === title) count += 1;
+            if (item.title === title) {
+                count += 1;
+            }
         });
-
         return count;
     }
 
@@ -39,7 +40,6 @@ const Checkout = (props) => {
     const subtotal = calculateSubTotal(items);
     const tax = calculateTax(subtotal);
     const distinctItems = unique(items, 'title');
-
     return (
         <div className='checkout'>
             <div className='header'>
@@ -53,6 +53,7 @@ const Checkout = (props) => {
                             {distinctItems.map((item) =>
                                 <CartItem
                                     count={getCount(item.title)}
+                                    totalPrice={parseInt(item.price.replace(/,/g,'')) * getCount(item.title)}
                                     item={item}
                                     key={uniqid()}
                                 />

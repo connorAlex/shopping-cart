@@ -2,9 +2,8 @@ import React from 'react';
 
 const CartItem = (props) => {
 
-    const {item, count} = props;
+    const {item, count, totalPrice } = props;
     
-
     return (
         <div className='cartItem'>
             <img className='checkoutImg' src={item.img} alt={item.img}/>
@@ -16,6 +15,7 @@ const CartItem = (props) => {
                     <div>x{count}</div>
                 </div>
                 <div>${item.price}</div>
+                <div>${totalPrice}</div>
             </div>
             
         </div>
