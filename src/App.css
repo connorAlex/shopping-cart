@@ -184,13 +184,13 @@ button:hover{
 .cartContainer {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   align-self: center;
   width: 60vw;
-  max-height: 60vh;
+  min-height: 25vh;
+  max-height: 65vh;
   overflow: scroll;
-  padding-inline: 10px;
-
+  box-shadow: 15px 15px var(--light-gray);
 
 }
 .cartTitle {
@@ -201,6 +201,13 @@ button:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.cartContainer {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.cartContainer::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 .cartItem img {
   margin-left:  2%;
@@ -237,6 +244,9 @@ button:hover{
 
   width: 250px;
   height: 20rem;
+
+  box-shadow: 15px 15px var(--light-gray);
+
 
 }
 .Pricing > div {
