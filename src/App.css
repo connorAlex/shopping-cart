@@ -126,6 +126,7 @@ button:hover{
   max-width: 750px;
   width: 70%;
   height: fit-content;
+  padding-bottom: 10px;
 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
