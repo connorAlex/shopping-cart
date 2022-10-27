@@ -4,6 +4,11 @@ const Pricing = (props) => {
 
     const {subtotal, tax, total} = props;
 
+    const calcShipping = () => {
+        if (subtotal > 0 ) return 13.55;
+        return 0;
+    }
+
     return (
         <div className="Pricing">
             
@@ -15,7 +20,10 @@ const Pricing = (props) => {
                 </div>
                 <div> 
                     <div> Shipping </div>
-                    <div> $13.60 </div>
+                    <div> 
+                        ${(calcShipping())}
+                    
+                    </div>
                 </div>
                 <div>
                     <div> Taxes </div>
@@ -23,7 +31,7 @@ const Pricing = (props) => {
                 </div>
                 <div>
                     <div> Total </div>
-                    <div> ${total + 13.60} </div>
+                    <div> ${total + calcShipping()} </div>
                 </div>
             </div>
             <div>

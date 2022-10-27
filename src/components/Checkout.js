@@ -48,7 +48,7 @@ const Checkout = ({items,removeItem}) => {
                 <div>
                     <div className='cartTitle'>Your Cart</div>
                         <div className='cartContainer'>
-                            {items.length === 0 && <div className='emptyCart'>you have no items</div>}
+                            {items.length === 0 && <div className='emptyCart'>You have no items.</div>}
                             {distinctItems.map((item) =>
                                 <CartItem
                                     count={getCount(item.title)}
