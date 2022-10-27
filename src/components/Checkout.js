@@ -49,7 +49,7 @@ const Checkout = (props) => {
                 <div>
                     <div className='cartTitle'>Your Cart</div>
                         <div className='cartContainer'>
-                    
+                            {distinctItems.length === 0 && <div className='emptyCart'>you have no items</div>}
                             {distinctItems.map((item) =>
                                 <CartItem
                                     count={getCount(item.title)}

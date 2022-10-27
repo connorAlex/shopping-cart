@@ -11,6 +11,7 @@ const Shop = ({cartCount, addToCart}) => {
     const [ storeItems, setStoreItems ] = useState(merchandiseData);
 
 
+
     return (
         <div className='Shop'>
            <div className='header'>
@@ -20,12 +21,14 @@ const Shop = ({cartCount, addToCart}) => {
             <div>
                 <img src={sidePhoto} className='sideImg' alt='Model wearing clothing that is for sale'/>
                 <div className='merchContainer'>
+                    
                     {storeItems.map((item) => <Merch 
                         item={item}
                         key={uniqid()}
                         addToCart={addToCart}
                         />
                     )}
+                    
                 </div>
             </div>
         </div>

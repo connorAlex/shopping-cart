@@ -211,6 +211,14 @@ button:hover{
   margin-top: 3px;
 
 }
+.emptyCart {
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
 .cartTitle {
   padding-left: 3px;
   padding-bottom: 5px;

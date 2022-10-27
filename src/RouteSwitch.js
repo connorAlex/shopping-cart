@@ -9,36 +9,7 @@ import coat from './images/trench_closeup.jpeg'
 
 const RouteSwitch = () => {
 
-    const [cart, setCart] = useState([{
-        img: shades,
-        title: 'Sunglasses',
-        label: 'Black Oval',
-        price: '120',
-    },
-    {
-        img: coat,
-        title: 'Coat',
-        label: 'Double Sided Wool',
-        price: '1,200'
-    },
-    {
-        img: shades,
-        title: 'Sunglasses',
-        label: 'Black Oval',
-        price: '120',
-    },
-    {
-        img: shades,
-        title: 'Sunglasses',
-        label: 'Black Oval',
-        price: '120',
-    },
-    {
-        img: shades,
-        title: 'Sunglasses',
-        label: 'Black Oval',
-        price: '120',
-    },]);
+    const [cart, setCart] = useState([]);
     
     const addToCart = (item) => {
         setCart(cart.concat(item))
