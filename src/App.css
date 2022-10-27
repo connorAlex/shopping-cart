@@ -92,7 +92,6 @@ button:hover{
   display:flex;
   flex-direction: column;
   gap: 10px;
-  height: 100vh;
   width: 100vw;
 }
 .Shop > :nth-child(2) {
@@ -102,7 +101,7 @@ button:hover{
   align-self: center;
   gap: 2vw;
 
-  height: 87vh;
+  height: 85vh;
   width: 95%;
 
 }
@@ -124,9 +123,9 @@ button:hover{
   align-content: center;
   gap: 10px;
   
-  max-width: 950px;
-  width: 100%;
-  height: 100%;
+  max-width: 750px;
+  width: 70%;
+  height: fit-content;
 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -143,7 +142,7 @@ button:hover{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 275px;
   
   box-shadow: 0px 0px 5px 1px var(--light-gray);
 }
@@ -151,7 +150,7 @@ button:hover{
   padding: 10px;
 }
 .merchImg {
-  height: 300px;
+  height: auto;
   width: 100%;
   
 }
