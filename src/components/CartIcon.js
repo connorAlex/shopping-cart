@@ -9,6 +9,7 @@ const CartIcon = (props) => {
     const routeChange = () => {
         navigate('/checkout');
     }
+    
 
     return (
         <div onClick={() => routeChange()} className="CartIcon">

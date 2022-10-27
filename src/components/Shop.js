@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Merch from './Merch.js';
 import { merchandiseData } from '../merchandiseData';
 import Menu from './Menu';
@@ -6,10 +6,11 @@ import CartIcon from './CartIcon';
 import sidePhoto from '../images/verticalovercoat.jpg';
 import uniqid from 'uniqid';
 
-const Shop = (props) => {
+const Shop = ({cartCount, addToCart}) => {
     // this is a use case for context. your cart follows you regardless of page
     const [ storeItems, setStoreItems ] = useState(merchandiseData);
-    const { cartCount, addToCart } = props;
+
+
     return (
         <div className='Shop'>
            <div className='header'>
@@ -31,4 +32,4 @@ const Shop = (props) => {
     )
 };
 
-export default Shop;
+export default React.memo(Shop);

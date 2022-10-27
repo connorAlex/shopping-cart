@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import App from './App';
 import Checkout from './components/Checkout';
 import Shop from './components/Shop';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 import shades from './images/shades_closeup.jpeg'
 import coat from './images/trench_closeup.jpeg'
