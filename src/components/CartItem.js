@@ -1,8 +1,6 @@
 import React from 'react';
 
-const CartItem = (props) => {
-
-    const {item, count, totalPrice } = props;
+const CartItem = ({item, count, totalPrice, removeItem }) => {
     
     return (
         <div className='cartItem'>
@@ -18,7 +16,7 @@ const CartItem = (props) => {
                     <div>${totalPrice}</div>
                 </div>
             </div>
-            <button>x</button>
+            <button onClick={() => removeItem(item.title)}>x</button>
             
         </div>
     )

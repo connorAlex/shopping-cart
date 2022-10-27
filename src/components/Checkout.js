@@ -4,10 +4,8 @@ import Menu from './Menu';
 import Pricing from './Pricing';
 import uniqid from 'uniqid';
 
-const Checkout = (props) => {
+const Checkout = ({items,removeItem}) => {
     
-    const {items} = props;
-
     const getCount = (title) => {
         let count = 0;
 
@@ -40,6 +38,7 @@ const Checkout = (props) => {
     const subtotal = calculateSubTotal(items);
     const tax = calculateTax(subtotal);
     const distinctItems = unique(items, 'title');
+
     return (
         <div className='checkout'>
             <div className='header'>
@@ -49,12 +48,13 @@ const Checkout = (props) => {
                 <div>
                     <div className='cartTitle'>Your Cart</div>
                         <div className='cartContainer'>
-                            {distinctItems.length === 0 && <div className='emptyCart'>you have no items</div>}
+                            {items.length === 0 && <div className='emptyCart'>you have no items</div>}
                             {distinctItems.map((item) =>
                                 <CartItem
                                     count={getCount(item.title)}
                                     totalPrice={parseInt(item.price.replace(/,/g,'')) * getCount(item.title)}
                                     item={item}
+                                    removeItem={removeItem}
                                     key={uniqid()}
                                 />
                             )}

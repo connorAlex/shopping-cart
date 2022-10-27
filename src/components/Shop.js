@@ -6,7 +6,7 @@ import CartIcon from './CartIcon';
 import sidePhoto from '../images/verticalovercoat.jpg';
 import uniqid from 'uniqid';
 
-const Shop = ({cartCount, addToCart}) => {
+const Shop = ({cartCount, addToCart, removeItem}) => {
     // this is a use case for context. your cart follows you regardless of page
     const [ storeItems, setStoreItems ] = useState(merchandiseData);
 
