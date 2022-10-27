@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .header div {
   padding-inline: 10px;
@@ -184,8 +184,8 @@ button:hover{
   align-self: center;
   flex-wrap: wrap;
   gap: 45px;
-  margin-top: 10px;
-  height: 85vh;
+  margin-top: 25px;
+  height: 80vh;
   width: 95vw;
   background-color: var(--light-gray);
   box-shadow:  0 0 5px 1px var(--light-gray);
@@ -205,7 +205,7 @@ button:hover{
   min-height: 20vh;
   max-height: 70vh;
   overflow: scroll;
-  box-shadow:  0 0 5px 1px var(--davys-grey);
+  box-shadow:  0 0 3px 1px var(--davys-grey);
   background-color: #fdfdfd;
 
   margin-top: 3px;
@@ -222,6 +222,7 @@ button:hover{
 .cartTitle {
   padding-left: 3px;
   padding-bottom: 5px;
+  font-weight: 600;
 }
 .cartItem {
   display: flex;
@@ -239,7 +240,7 @@ button:hover{
 .cartItem img {
   margin-left:  2%;
   margin: 1%;
-  box-shadow: 0px 0px 5px 1px var(--light-gray);
+  box-shadow: 0px 0px 3px 1px var(--light-gray);
 }
 .cartItem button {
   padding-inline: 10px;
@@ -273,7 +274,6 @@ button:hover{
   height: 18rem;
 
   box-shadow:  0 0 5px 1px var(--davys-grey);
-
 
 }
 .Pricing > div {
